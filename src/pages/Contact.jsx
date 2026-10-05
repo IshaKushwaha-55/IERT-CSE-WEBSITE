@@ -72,7 +72,7 @@ export default function Contact() {
             <h2 className="section-title">FIND <span>US HERE</span></h2>
             <div className="section-divider" />
             <div className="map-container">
-              {/* ⬇️ REPLACE: Embed a real Google Maps iframe */}
+              {/*  */}
               <iframe
                 title="IERT Prayagraj Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.1567!2d81.8426!3d25.4358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb2b5a4e8a3f%3A0x5c7e39f2e6b3a2c4!2sIERT%20Prayagraj!5e0!3m2!1sen!2sin!4v1000000000000"
@@ -108,7 +108,7 @@ export default function Contact() {
                 </tbody>
               </table>
               <p style={{ fontSize: "0.8rem", color: "var(--gray)", marginTop: 8 }}>
-                ⬇️ REPLACE: Fill actual names and email IDs above.
+                
               </p>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                 </div>
                 <button type="submit" className="btn btn-primary form-submit-btn">Send Message →</button>
                 <p className="form-note">
-                  ⬇️ NOTE: Connect this form to a backend or <a href="https://www.emailjs.com" target="_blank" rel="noreferrer">EmailJS</a> to actually send emails.
+                  <a href="https://www.emailjs.com" target="_blank" rel="noreferrer">Email</a> 
                 </p>
               </form>
             )}

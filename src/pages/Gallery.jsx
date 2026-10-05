@@ -86,8 +86,7 @@ export default function Gallery() {
           </div>
 
           <p className="gallery-note">
-            ⬇️ <strong>To add your photos:</strong> Place images in <code>src/assets/gallery/</code> folder and
-            update the <code>src</code> property of each item in <code>Gallery.jsx</code>. Images should be in .jpg or .webp format.
+             <strong></strong> <code>src/assets/gallery/</code> <code>src</code> <code>Gallery.jsx</code>. 
           </p>
         </div>
       </section>
@@ -102,7 +101,7 @@ export default function Gallery() {
             ) : (
               <div className="lightbox-placeholder">
                 📷 {lightboxImg.title}<br />
-                <small>[ Replace with actual image ]</small>
+                
               </div>
             )}
             <p className="lightbox-caption">{lightboxImg.title} — {lightboxImg.category}</p>

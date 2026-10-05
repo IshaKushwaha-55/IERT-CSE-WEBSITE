@@ -160,6 +160,7 @@ export default function Footer() {
             <div className="footer-divider" />
             <ul className="footer-links">
               <li><Link to="/events">Events & News</Link></li>
+              <li><Link to="/society">IERT CSE Society</Link></li>
               <li><Link to="/gallery">Photo Gallery</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
               <li><a href="https://aktu.ac.in" target="_blank" rel="noreferrer">AKTU University</a></li>

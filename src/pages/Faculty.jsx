@@ -113,10 +113,7 @@ export default function Faculty() {
             ))}
           </div>
 
-          <div className="faculty-note">
-            <strong>Note:</strong> Replace all placeholder names, qualifications, and photos with actual faculty details. 
-            Faculty photos should be placed at <code>src/assets/faculty/faculty[id].jpg</code>.
-          </div>
+          
         </div>
       </section>
 

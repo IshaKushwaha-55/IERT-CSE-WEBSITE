@@ -18,6 +18,7 @@ const navLinks = [
   { label: "Faculty", path: "/faculty" },
   { label: "Admissions", path: "/admissions" },
   { label: "Events & News", path: "/events" },
+  { label: "Society", path: "/society" },
   { label: "Gallery", path: "/gallery" },
   { label: "Placements", path: "/placements" },
   { label: "Contact", path: "/contact" },

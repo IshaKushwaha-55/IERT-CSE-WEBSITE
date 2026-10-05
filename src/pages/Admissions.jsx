@@ -67,7 +67,7 @@ export default function Admissions() {
             </div>
           </div>
           <div className="adm-img-placeholder">
-            {/* ⬇️ REPLACE: Add admission/campus image at src/assets/admissions.jpg */}
+            {/*  */}
             [ Campus / Admission Photo ]<br />
             <small>src/assets/admissions.jpg</small>
           </div>

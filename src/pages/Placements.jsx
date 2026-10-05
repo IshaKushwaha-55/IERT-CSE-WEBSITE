@@ -19,7 +19,7 @@ const testimonials = [
     batch: "B.Tech CSE, 2024",
     company: "TCS",
     quote: "IERT gave me the foundation I needed. The faculty was supportive and the labs helped me practice what I learned in class.",
-    photo: null, // ⬇️ Replace: src/assets/alumni/alumni1.jpg
+    photo: null, // 
   },
   {
     name: "Alumni Name 2",
@@ -77,7 +77,7 @@ export default function Placements() {
             </div>
           </div>
           <div className="place-img-placeholder">
-            {/* ⬇️ REPLACE: Add placement/campus photo at src/assets/placements.jpg */}
+            {/* */}
             [ Placement Drive Photo ]<br />
             <small>src/assets/placements.jpg</small>
           </div>
@@ -114,7 +114,7 @@ export default function Placements() {
             </table>
           </div>
           <p style={{ fontSize: "0.8rem", color: "var(--gray)", marginTop: 12 }}>
-            ⬇️ REPLACE: Fill in actual placement data from the placement cell office.
+            
           </p>
         </div>
       </section>
@@ -131,8 +131,8 @@ export default function Placements() {
             {companies.map((c) => (
               <div key={c} className="recruiter-logo card">
                 <span>{c}</span>
-                {/* ⬇️ REPLACE: Add company logo at src/assets/logos/{c.toLowerCase()}.png 
-                    Then use: <img src={`/src/assets/logos/${c.toLowerCase()}.png`} alt={c} /> */}
+                {/* src/assets/logos/{c.toLowerCase()}.png 
+                     <img src={`/src/assets/logos/${c.toLowerCase()}.png`} alt={c} /> */}
               </div>
             ))}
           </div>

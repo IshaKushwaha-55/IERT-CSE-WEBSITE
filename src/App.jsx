@@ -11,6 +11,7 @@ import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
 import Placements from "./pages/Placements";
 import Contact from "./pages/Contact";
+import Society from "./pages/Society";
 import "./styles/global.css";
 
 function ScrollToTop() {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/society" element={<Society />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/placements" element={<Placements />} />
           <Route path="/contact" element={<Contact />} />
