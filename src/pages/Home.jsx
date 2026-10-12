@@ -257,32 +257,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── LATEST RESEARCH ──────────────────────────────── */}
-      <section className="section research-section">
-        <div className="container">
-          <div className="news-header">
-            <h2 className="section-title">LATEST <span>RESEARCH</span></h2>
-            <Link to="/academics" className="btn btn-outline view-all-btn">VIEW ALL</Link>
-          </div>
-          <div className="section-divider" />
-          <div className="research-grid">
-            {latestResearch.map((r) => (
-              <div key={r.title} className="card research-card">
-                <div className="research-img-placeholder">
-                  {/* ⬇️ REPLACE: Add research image */}
-                  [Research Image]
-                </div>
-                <div className="research-body">
-                  <h4>{r.title}</h4>
-                  <p>{r.desc}</p>
-                  <a href="#" className="read-more">Read more →</a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── PHOTO GALLERY PREVIEW ────────────────────────── */}
       <section className="section gallery-preview-section">
         <div className="container">

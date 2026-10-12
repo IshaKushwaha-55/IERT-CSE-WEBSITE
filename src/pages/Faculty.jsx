@@ -1,68 +1,34 @@
-import { GraduationCap, Lightbulb, Mail } from "lucide-react";
+import induSir from "../assets/faculty/indu-sir.jpeg";
+import richaMaam from "../assets/faculty/richa-maam.jpeg";
+import sp from "../assets/faculty/sp.jpeg";
+import anoop from "../assets/faculty/anoop.jpeg";
 import "./Faculty.css";
 
-// ⬇️ REPLACE: Fill in actual faculty details. Add photos at src/assets/faculty/faculty1.jpg etc.
 const faculty = [
   {
     id: 1,
-    name: "Prof. [HOD Name]",
-    designation: "Professor & Head of Department",
-    qualification: "Ph.D / M.Tech",
-    specialization: "Computer Science & Engineering",
-    email: "hod.cse@iert.ac.in",
-    photo: null, // ⬇️ Replace: "/src/assets/faculty/hod.jpg"
+    name: "Mr. Indu Bhushan Dubey",
+    designation: "Assistant Professor",
+    photo: induSir,
   },
   {
     id: 2,
-    name: "Dr. [Faculty Name]",
-    designation: "Associate Professor",
-    qualification: "Ph.D (CS), MNNIT Allahabad",
-    specialization: "Machine Learning, AI",
-    email: "faculty2@iert.ac.in",
-    photo: null,
+    name: "Mrs. Richa Singh",
+    designation: "Assistant Professor",
+    photo: richaMaam,
   },
   {
     id: 3,
-    name: "Mr. [Faculty Name]",
+    name: "Mr. Satya Prakash Singh",
     designation: "Assistant Professor",
-    qualification: "M.Tech (Software Engineering), MNNIT",
-    specialization: "Software Engineering, Web Tech",
-    email: "ibd@iert.ac.in",
-    photo: null,
+    photo: sp,
   },
   {
     id: 4,
-    name: "Ms. [Faculty Name]",
+    name: "Mrs. Anoop Srivastava",
     designation: "Assistant Professor",
-    qualification: "M.Tech (Computer Science)",
-    specialization: "Data Structures, Algorithms",
-    email: "indu2365@gmail.com",
-    photo: null,
+    photo: anoop,
   },
-  {
-    id: 5,
-    name: "Mr. [Faculty Name]",
-    designation: "Assistant Professor",
-    qualification: "M.Tech (Computer Networks)",
-    specialization: "Computer Networks, Security",
-    email: "faculty5@iert.ac.in",
-    photo: null,
-  },
-  {
-    id: 6,
-    name: "Ms. [Faculty Name]",
-    designation: "Assistant Professor",
-    qualification: "M.Tech (IT)",
-    specialization: "Database Management, Cloud Computing",
-    email: "faculty6@iert.ac.in",
-    photo: null,
-  },
-];
-
-const staff = [
-  { name: "[Lab Assistant Name]", role: "Senior Lab Technician", dept: "Programming Lab" },
-  { name: "[Staff Name]", role: "Junior Lab Technician", dept: "Networking Lab" },
-  { name: "[Staff Name]", role: "System Administrator", dept: "Server Room" },
 ];
 
 export default function Faculty() {
@@ -102,62 +68,13 @@ export default function Faculty() {
                 <div className="faculty-info">
                   <h3>{f.name}</h3>
                   <p className="faculty-designation">{f.designation}</p>
-                  <div className="faculty-divider" />
-                  <div className="faculty-details">
-                    <p><GraduationCap size={14} strokeWidth={2} /> {f.qualification}</p>
-                    <p><Lightbulb size={14} strokeWidth={2} /> {f.specialization}</p>
-                    <p><Mail size={14} strokeWidth={2} /> <a href={`mailto:${f.email}`}>{f.email}</a></p>
-                  </div>
                 </div>
               </div>
             ))}
           </div>
-
-          
         </div>
       </section>
 
-      {/* Technical Staff */}
-      <section className="section staff-section">
-        <div className="container">
-          <h2 className="section-title">TECHNICAL <span>STAFF</span></h2>
-          <div className="section-divider" />
-          <div className="staff-table-wrapper">
-            <table className="staff-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Designation</th>
-                  <th>Department</th>
-                </tr>
-              </thead>
-              <tbody>
-                {staff.map((s, i) => (
-                  <tr key={s.name}>
-                    <td>{i + 1}</td>
-                    <td>{s.name}</td>
-                    <td>{s.role}</td>
-                    <td>{s.dept}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Join Us */}
-      <section className="section join-section">
-        <div className="container join-box">
-          <h2>Join Our Faculty</h2>
-          <p>
-            We are always looking for talented and dedicated educators to join our team.
-            If you are passionate about Computer Science education and research, we'd love to hear from you.
-          </p>
-          <a href="mailto:cse@iert.ac.in" className="btn btn-primary">Send Your CV</a>
-        </div>
-      </section>
     </div>
   );
 }

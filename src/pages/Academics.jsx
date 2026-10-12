@@ -1,4 +1,6 @@
 import { useState } from "react";
+import lab1Image from "../assets/academics/lab-1.jpeg";
+import lab2Image from "../assets/academics/lab-2.jpeg";
 import "./Academics.css";
 
 const semesters = [
@@ -85,10 +87,15 @@ export default function Academics() {
               ))}
             </div>
           </div>
-          <div className="prog-img-placeholder">
-            {/* ⬇️ REPLACE: Add classroom/lab photo at src/assets/academics-hero.jpg */}
-            [ Classroom / Lab Photo ]<br />
-            <small>src/assets/academics-hero.jpg</small>
+          <div className="facility-photo-grid">
+            <figure className="facility-photo-card">
+              <img src={lab1Image} alt="Lab 1" className="facility-photo" />
+              <figcaption>Lab 1</figcaption>
+            </figure>
+            <figure className="facility-photo-card">
+              <img src={lab2Image} alt="Lab 2" className="facility-photo" />
+              <figcaption>Lab 2</figcaption>
+            </figure>
           </div>
         </div>
       </section>

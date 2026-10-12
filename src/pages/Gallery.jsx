@@ -12,12 +12,16 @@ const galleryItems = [
   { id: 8,  category: "Events",       title: "Student Assembly",                src: "/src/assets/gallery/student-assembly.jpg" },
   { id: 9,  category: "Events",       title: "AI Workshop",                     src: "/src/assets/gallery/ai-workshop.jpg" },
   { id: 10, category: "Achievements", title: "Award Ceremony",                  src: "/src/assets/gallery/award-ceremony.jpg" },
-  { id: 11, category: "Achievements", title: "Placement Drive",                 src: null },
   { id: 12, category: "Campus",       title: "IERT Garden",                     src: "/src/assets/gallery/iert-garden.webp" },
   { id: 13, category: "Campus",       title: "IERT Library",                    src: "/src/assets/gallery/library.webp" },
   { id: 14, category: "Campus",       title: "IERT Hostel",                     src: "/src/assets/gallery/hostel.webp" },
   { id: 15, category: "Campus",       title: "Campus Courtyard",                src: "/src/assets/gallery/campus-courtyard.avif" },
   { id: 16, category: "Campus",       title: "IERT Auditorium",                 src: "/src/assets/gallery/auditorium.avif" },
+  { id: 17, category: "Campus",       title: "Hackathon", src: "/src/assets/gallery/gallery-new-1.jpeg" },
+  { id: 18, category: "Campus",       title: "participants",     src: "/src/assets/gallery/gallery-new-2.jpeg" },
+  { id: 19, category: "Campus",       title: "CSE Society's Core Members",      src: "/src/assets/gallery/gallery-new-3.jpeg" },
+  { id: 20, category: "Campus",       title: "Society's Executive Council",     src: "/src/assets/gallery/gallery-new-4.jpeg" },
+  { id: 21, category: "Campus",       title: "Society TECH Talks and Induction",                       src: "/src/assets/gallery/gallery-new-5.jpeg" },
 ];
 
 const categories = ["All", "Lab", "Campus", "Events", "Achievements"];
@@ -85,9 +89,6 @@ export default function Gallery() {
             ))}
           </div>
 
-          <p className="gallery-note">
-             <strong></strong> <code>src/assets/gallery/</code> <code>src</code> <code>Gallery.jsx</code>. 
-          </p>
         </div>
       </section>
 

@@ -66,10 +66,12 @@ export default function Admissions() {
               </div>
             </div>
           </div>
-          <div className="adm-img-placeholder">
-            {/*  */}
-            [ Campus / Admission Photo ]<br />
-            <small>src/assets/admissions.jpg</small>
+          <div className="adm-image-wrap">
+            <img
+              src="/src/assets/admissions/campus-admission.jpeg"
+              alt="Campus admission photo"
+              className="adm-photo"
+            />
           </div>
         </div>
       </section>
@@ -128,7 +130,7 @@ export default function Admissions() {
             </table>
           </div>
           <p style={{ fontSize: "0.82rem", color: "var(--gray)", marginTop: 12 }}>
-            ⬇️ REPLACE: Fill in actual fee amounts from the accounts office. Contact: +91-532-2659-7135
+             Contact: +91-532-2659-7135
           </p>
         </div>
       </section>

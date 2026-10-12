@@ -95,10 +95,40 @@ const executiveCommittee = [
     responsibility: "Supports Society activities and facilitates student participation.",
   },
   {
-    name: "Aman Kumar",
+    name: "Ojas Singh",
     position: "Year Representative",
     photo: null,
-    responsibility: "Assists with communication and engagement across the student body.",
+    responsibility: "Represents student concerns and helps communicate Society information.",
+  },
+  {
+    name: "Ayush Patel",
+    position: "Year Representative",
+    photo: null,
+    responsibility: "Represents student concerns and helps communicate Society information.",
+  },
+  {
+    name: "Ambuj Singh",
+    position: "Year Representative",
+    photo: null,
+    responsibility: "Represents student concerns and helps communicate Society information.",
+  },
+  {
+    name: "Nikhil",
+    position: "Year Representative",
+    photo: null,
+    responsibility: "Represents student concerns and helps communicate Society information.",
+  },
+  {
+    name: "Kaushiki",
+    position: "Year Representative",
+    photo: null,
+    responsibility: "Represents student concerns and helps communicate Society information.",
+  },
+  {
+    name: "Khushi Pandey",
+    position: "Year Representative",
+    photo: null,
+    responsibility: "Represents student concerns and helps communicate Society information.",
   },
 ];
 
@@ -173,28 +203,46 @@ const roles = [
 
 const activities = [
   {
-    type: "Seminar",
-    title: "Technical Seminar on Emerging Technologies",
-    date: "To be announced",
-    details: "A department-level seminar focused on current trends, practical exposure and academic discussion.",
+    type: "Technical",
+    title: "Society Induction & Tech Talk",
+    date: "Oct 2026 (2nd Sat)",
+    details: "Welcome meet, Git/GitHub & Open-Source setup (PPT Hall) · Only 1st and 2nd year.",
   },
   {
-    type: "Webinar",
-    title: "Career Skills and Industry Readiness Webinar",
-    date: "To be announced",
-    details: "A guided session covering industry expectations, professional communication and career preparation.",
+    type: "Sports (Mind)",
+    title: "Inter-Branch Chess Championship",
+    date: "Oct 2026 (5th Sat)",
+    details: "Swiss-league tournament, trophies & certificates (Auditorium).",
   },
   {
-    type: "Activity",
-    title: "Student Learning and Mentorship Session",
-    date: "To be announced",
-    details: "An interactive activity designed to support peer learning, mentorship and knowledge sharing.",
+    type: "Technical",
+    title: "Winter Code-Rush",
+    date: "Nov 2026 (1st Sat)",
+    details: "4-hour algorithmic contest on HackerRank (DSA) (Computer Lab).",
   },
   {
-    type: "Workshop",
-    title: "Hands-on Workshop for Practical Learning",
-    date: "To be announced",
-    details: "A practical workshop that encourages collaboration, problem solving and technical engagement.",
+    type: "Sports",
+    title: "Table Tennis Smash Tournament",
+    date: "Feb 2027 (2nd Sat)",
+    details: "Singles & Doubles knockout fixtures (Sports Room, PPT Hall).",
+  },
+  {
+    type: "Technical (Flagship)",
+    title: "Flagship Hack-a-Day (12 Hrs)",
+    date: "Feb 2027 (4th Sat)",
+    details: "Full-day hackathon, project judging & prizes (PPT Hall).",
+  },
+  {
+    type: "Cultural",
+    title: "Cultural Event",
+    date: "Mar 2027 (3rd Sat)",
+    details: "Music, open mic, tech skits, DJ/sound, snacks (PPT Hall).",
+  },
+  {
+    type: "Valedictory",
+    title: "Annual Awards & Project Expo",
+    date: "Apr 2027 (2nd Sat)",
+    details: "End tenure rewards (participation & honors) (PPT Hall).",
   },
 ];
 
@@ -312,26 +360,6 @@ export default function Society() {
         </div>
       </section>
 
-      <section className="section society-alt-section">
-        <div className="container">
-          <h2 className="section-title">ORGANIZATIONAL <span>STRUCTURE</span></h2>
-          <div className="section-divider" />
-          <div className="structure-flow">
-            <div className="structure-node">Patron</div>
-            <div className="structure-connector" />
-            <div className="structure-node">Chairperson</div>
-            <div className="structure-connector" />
-            <div className="structure-node">Executive Committee</div>
-            <div className="structure-connector" />
-            <div className="structure-node">General Body</div>
-          </div>
-          <div className="structure-subsection">
-            <h3>Advisory Committee</h3>
-            <p>The Society operates with guidance from the Advisory Committee while the Executive Committee carries out day-to-day coordination.</p>
-          </div>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <h2 className="section-title">EXECUTIVE <span>COMMITTEE</span></h2>
@@ -404,26 +432,7 @@ export default function Society() {
               </div>
             ))}
           </div>
-          <p className="society-section-note">This section can be updated easily with official Society activities, seminars and webinars along with dates and short descriptions.</p>
-        </div>
-      </section>
-
-      <section className="section society-alt-section">
-        <div className="container">
-          <h2 className="section-title">SOCIETY <span>GALLERY</span></h2>
-          <div className="section-divider" />
-          <div className="society-gallery-grid">
-            {galleryItems.map((item) => (
-              <div key={item.title} className="card society-gallery-card">
-                <div className="society-gallery-placeholder">
-                  <FileText size={22} strokeWidth={1.8} />
-                  <span>{item.title}</span>
-                  <small>{item.category}</small>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="society-section-note">Official Society photographs will be added here as they are provided.</p>
+          
         </div>
       </section>
 

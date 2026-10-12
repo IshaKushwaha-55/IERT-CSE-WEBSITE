@@ -134,9 +134,8 @@ export default function Footer() {
             <p><Mail size={13} strokeWidth={2} /> cse@iert.ac.in</p>
             <p><Globe size={13} strokeWidth={2} /> <a href="https://www.iert.ac.in" target="_blank" rel="noreferrer">www.iert.ac.in</a></p>
             <div className="footer-socials">
-              <a href="#" aria-label="Twitter">𝕏</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Facebook">f</a>
+              <a href="https://x.com/IertPrayagraj" target="_blank" rel="noreferrer" aria-label="Twitter">𝕏</a>
+              <a href="https://www.linkedin.com/in/tpo-iert/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
             </div>
           </div>
 
@@ -185,6 +184,9 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
+          <p className="footer-developer-credit">
+            Designed &amp; Developed by <a href="https://www.linkedin.com/in/sarthak-s-338609328/" target="_blank" rel="noopener noreferrer">Sarthak Singh</a> and <a href="https://www.linkedin.com/in/isha-k-55a695325/" target="_blank" rel="noopener noreferrer">Isha Kushwaha</a>
+          </p>
           <p>© {new Date().getFullYear()} Department of CSE, IERT Prayagraj. All Rights Reserved.</p>
           <p>Affiliated with <strong>AKTU, Lucknow</strong> | Approved by <strong>AICTE, New Delhi</strong></p>
         </div>

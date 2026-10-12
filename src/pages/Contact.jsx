@@ -55,9 +55,8 @@ export default function Contact() {
             <h3>Web & Social</h3>
             <p><a href="https://www.iert.ac.in" target="_blank" rel="noreferrer">www.iert.ac.in</a></p>
             <div className="social-links">
-              <a href="#" className="social-btn">𝕏 Twitter</a>
-              <a href="#" className="social-btn">in LinkedIn</a>
-              <a href="#" className="social-btn">f Facebook</a>
+              <a href="https://x.com/IertPrayagraj" target="_blank" rel="noreferrer" className="social-btn">𝕏 Twitter</a>
+              <a href="https://www.linkedin.com/in/tpo-iert/" target="_blank" rel="noreferrer" className="social-btn">in LinkedIn</a>
             </div>
           </div>
         </div>
@@ -84,33 +83,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* Key Contacts Table */}
-            <div style={{ marginTop: 28 }}>
-              <h3 className="key-contacts-title">Key Contacts</h3>
-              <table className="key-contacts-table">
-                <thead>
-                  <tr><th>Role</th><th>Name</th><th>Email</th></tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Head of Department", "Prof. [HOD Name]", "hod.cse@iert.ac.in"],
-                    ["Placement Coordinator", "[Name]", "placement@iert.ac.in"],
-                    ["Exam Coordinator", "[Name]", "exam.cse@iert.ac.in"],
-                    ["Lab In-charge", "[Name]", "lab.cse@iert.ac.in"],
-                    ["Admission Enquiry", "Office", "cse@iert.ac.in"],
-                  ].map(([role, name, email]) => (
-                    <tr key={role}>
-                      <td>{role}</td>
-                      <td>{name}</td>
-                      <td><a href={`mailto:${email}`}>{email}</a></td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              <p style={{ fontSize: "0.8rem", color: "var(--gray)", marginTop: 8 }}>
-                
-              </p>
-            </div>
           </div>
 
           {/* Contact Form */}
